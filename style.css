@@ -1,0 +1,39 @@
+.cell-row{
+    display: flex;
+}
+.cell{
+    width: 80px;
+    height: 40px;
+    border: 1px solid gray;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.cell:focus{
+    border: 3px solid blue;
+}
+
+/* Used to target a class that has both cell and header */
+.cell.header{
+    text-align: center;
+    background-color: #ddd;
+}
+
+.cell.header.active{
+    color: white;
+    background-color: dodgerblue;
+}
+
+.cell:focus{
+    background-color: #ddd;
+}
+
+#export-btn {
+    background: green;
+    border: none;
+    color: white;
+    padding: 10px;
+    display: inline;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
